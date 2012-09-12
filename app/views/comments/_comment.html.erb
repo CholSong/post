@@ -1,0 +1,15 @@
+<p>
+	<b>Commenter:</b><br/>
+	<%= comment.commter %><br/>
+</p>
+<p>
+	<b>Comment:</b><br/>
+	<%= comment.body %>
+</p>
+<p>
+	<%= link_to "Destory Comment", 
+		[comment.post,comment],
+		:confirm => 'Are you sure?',
+		:method => :delete
+	%>
+</p>
